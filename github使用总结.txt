@@ -1,0 +1,20 @@
+1.配置 ：git config --global user.name "stjia"
+				 git config --global user.email "shtjia@163.com"
+
+2.生成秘钥： ssh-keygen -t rsa -C "shtjia@163.com"
+						 位置：C:\Users\stjia\.ssh   将公钥 .pub文件内容复制粘贴到github设置中的ssh key中；
+		
+		
+3. git init 进行初始化；
+首次用 git remote add origin git@github.com:hellojst/myjava.git 或 		 git remote add origin https://github.com/hellojst/myjava.git   在github项目页 clone or download下拉框选 SSH 或 HTTPS显示不同内容	 
+
+4. git rebase : git rebase命令在另一个分支基础之上重新应用，用于把一个分支的修改合并到当前分支。
+						 git pull --r ebase origin master  :  将README文件从远端拉下来  基线同步 才可进行提交  -----  应用于本地文件初次关联并上传GitHub；
+						 
+5. git pull origin master去同步， git push origin master去提交
+
+
+elipse git插件：
+	Windows -- preferces -- Team -- Git -- Configuration: user name 中的用户名和 emai  用于生成秘钥的配置，
+	                     -- General -- NetWrok connection -- SSH2 中可以生成一个秘钥或将已有秘钥加载进来
+	                     
